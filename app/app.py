@@ -1,44 +1,3 @@
-
-# app.py
-
-# import sys
-# import os
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-# import streamlit as st
-# import joblib
-# import numpy as np
-# from src.data_preprocessing import get_scaler
-
-# st.title("Osteoporosis Stage Predictor")
-
-# gender = st.selectbox("Select Gender", ["Men", "Women"])
-# gender_key = gender.lower()
-
-# age = st.slider("Age", 40, 90)
-# bmi = st.number_input("BMI", value=25.0)
-# testosterone = st.number_input("Testosterone Level (ng/dL)", value=500.0 if gender == "Men" else 50.0)
-# vitamin_d = st.number_input("Vitamin D Level (ng/mL)", value=25.0)
-# calcium = st.number_input("Calcium Intake (mg/day)", value=800.0)
-# alcohol = st.slider("Alcohol Intake (drinks/week)", 0, 10)
-# smoking = st.selectbox("Smoking", ["No", "Yes"])
-# physical = st.slider("Physical Activity Level (1 - Low to 5 - High)", 1, 5)
-
-# if st.button("Predict Stage"):
-#     input_data = np.array([[age, bmi, testosterone, vitamin_d, calcium,
-#                             alcohol, 1 if smoking == "Yes" else 0, physical]])
-
-#     model = joblib.load(f"model_{gender.lower()}.pkl")
-#     scaler = joblib.load(f"scaler_{gender.lower()}.pkl")
-#     input_scaled = scaler.transform(input_data)
-
-#     prediction = model.predict(input_scaled)[0]
-#     stage_map = {0: "Normal", 1: "Osteopenia", 2: "Osteoporosis"}
-#     # st.success(f"Predicted Stage: {stage_map[prediction]}")
-#     st.markdown(f"<h2 style='text-align: center; color: green;'> Predicted Stage : {stage_map[prediction]}</h2>", unsafe_allow_html=True)
-
-
-
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -52,10 +11,6 @@ st.title("Osteoporosis Stage Predictor")
 
 # Gender selection
 gender = st.selectbox("Select Gender", ["Men", "Women"])
-
-# Input features
-# gender_key = gender.lower()
-
 
 age = st.slider("Age", 40, 90)
 bmi = st.number_input("BMI", value=25.0)
