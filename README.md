@@ -1,5 +1,11 @@
 # Osteoporosis-stage-prediction
 
+
+-> Clone the repository :
+
+git clone https://github.com/bhavana1820/Osteoporosis-stage-prediction.git
+
+
 -> To create environment : 
 
 python -m venv venv
