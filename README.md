@@ -1,36 +1,44 @@
 # Osteoporosis-stage-prediction
 
--> To create environment 
+-> To create environment : 
+
 python -m venv venv
 
 if error try : Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 
--> then to activate venv
+-> then to activate venv :
+
 venv\Scripts\activate
 
 
--> Intsall the requirements 
+-> Intsall the requirements : 
+
 pip install -r requirements.txt
 
 
--> To create dataset
+-> To create dataset : 
+
 python .\dataset\create_dataset.py
 
 
--> Train the model
+-> Train the model : 
+
 python .\src\model_training.py
 
 
--> Run the Streamlit app 
+-> Run the Streamlit app : 
+
 streamlit run app/app.py
 
 
--> To deactivate environment 
+-> To deactivate environment : 
+
 deactivate 
 
 
--> To change the settings to it's original setting 
+-> To change the settings to it's original setting : 
+
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Restricted
 
 
